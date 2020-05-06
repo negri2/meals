@@ -45,10 +45,17 @@ class MealItem extends StatelessWidget {
                   bottom: 20,
                   child: Container(
                     width: 300,
-                    color: Colors.black54,
+                    
                     padding: EdgeInsets.symmetric(
                       vertical: 5,
                       horizontal: 20,
+                    ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(8),
+                        bottomLeft: Radius.circular(8),
+                      ),
+                      color: Colors.black54,
                     ),
                     child: Text(
                       meal.title,
